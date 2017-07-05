@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
 
     	/* Find WebView element by its id*/
         WebView webView = (WebView) findViewById(R.id.webView);
-        webView.setWebChromeClient(new WebChromeClient());
+        webView.setWebViewClient(new WebViewClient());
 
         /* Create new settings for our WebView element */
         WebSettings webSettings = webView.getSettings();
@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
         /* Using the name "android_asset" means that
         the system will look for a file named "assets"
         at app/src/main, the same fold this file is in. */
-        webView.loadUrl("file:///android_asset/index.html");
+        webView.loadUrl("https://beta.fantopy.com");
     }
 
 }
